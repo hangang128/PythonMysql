@@ -25,12 +25,14 @@ Directory Structure
 Running
 -------
 1. cd PythonMysql\emp_mgr\src
-2. python 
-3. gzip -cd custom-karaf-1.0-SNAPSHOT-bin.tar.gz | tar -xvf -
-4. cd custom-karaf-1.0-SNAPSHOT
-5. bin/karaf
-6. in console: features:install icarus-springmvc-webapp
-7. the URL http://localhost:8181/spring-mvc-client should display the home page
+
+2. Setup mysql connection.
+   Modify file EmployeeManager.py, line 16(host, user, password and database):
+        con = mdb.connect('localhost', 'testuser', 'test623', 'testdb');
+
+3. run cmd:
+   python EmployeeManager.py
+
 
 Sample Output
 --------------
