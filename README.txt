@@ -1,11 +1,11 @@
 Python and Mysql sample
 =================================
 
-The aim of this sample is to demonstrate a command line application written with Python to talk with Mysql DB.
+The aim of this sample is to demonstrate a command line application written in Python to talk with Mysql DB.
 
 The data model is an employee-manager table which has hierarchical relationship among employees. 
 
-The command is to query the all employees, get all the reports of a specific manager, or get all the managers of an employee.
+The command is to query all employees, get all employees reporting to a specific manager, or get all the managers of an employee.
 
 The table creation and data population is done by the program. Before its run, a mysql server and a database need to be created.
 
