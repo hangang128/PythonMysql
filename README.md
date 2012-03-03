@@ -1,7 +1,14 @@
 Python and Mysql sample
 =================================
 
-The aim of this sample is to demostrate a interactive command line interface written with Python to talk with Mysql DB.
+The aim of this sample is to demostrate a command line application written with Python to talk with Mysql DB.
+
+The data model is an employee-manager table which has hierarchical relationship among employees. 
+
+The command is to query the all employees, get all the reports of a specific manager, or get all the managers of an employee.
+
+The table creation and data population is done by the program. Before its run, a mysql server and a database need to be created.
+
 
 System Requirements
 -------------------
@@ -15,18 +22,18 @@ Directory Structure
 
 * PythonMysql\emp_mgr\src
   
-  Folder to run the program
+  	Folder to run the program
 
 * PythonMysql\emp_mgr
   
-  Folder to have eclipse project files
+  	Folder to have eclipse project files
 
 
 Running
 -------
 1. cd PythonMysql\emp_mgr\src
 
-2. Setup mysql connection.
+2. Setup mysql connection:
    Modify file EmployeeManager.py, line 16(host, user, password and database):
         con = mdb.connect('localhost', 'testuser', 'test623', 'testdb');
 
