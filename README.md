@@ -1,4 +1,4 @@
-Pathon and Mysql sample
+Python and Mysql sample
 =================================
 
 The aim of this sample is to demostrate a interactive command line interface written with Python to talk with Mysql DB.
