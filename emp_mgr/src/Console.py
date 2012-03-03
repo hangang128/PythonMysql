@@ -115,11 +115,11 @@ def get_date(message, default=None, format="%y-%m-%d"):
         except ValueError as err:
             print("ERROR", err)
 
-
 def get_menu_choice(message, valid, default=None, force_lower=False):
     message += ": " if default is None else " [{0}]: ".format(default)
     while True:
         line = input(message)
+        line = line.rstrip()
         if not line and default is not None:
             return default
         if line not in valid:

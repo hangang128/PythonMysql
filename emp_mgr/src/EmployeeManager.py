@@ -56,6 +56,7 @@ def all_employee(cur):
 
 def list_report(cur):
     manager_name = Console.get_string("Please enter manager name", "Manager Name")
+    manager_name = manager_name.rstrip()
     if not manager_name:
         return
     print("\n" + manager_name + "'s reports:")
@@ -74,6 +75,7 @@ def list_report(cur):
     
 def list_manager(cur):
     employee_name = Console.get_string("Please enter employee name", "Employee Name")
+    employee_name = employee_name.rstrip()
     if not employee_name:
         return
     print("\n" + employee_name + "'s managers:")
